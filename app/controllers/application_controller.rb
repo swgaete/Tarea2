@@ -48,7 +48,11 @@ class ApplicationController < ActionController::Base
   end
 
   def maximaResolucion(imagen) #no es necesario 
+<<<<<<< HEAD
     
+=======
+  	
+>>>>>>> b3a5a35b4df19015960fba6f567dc3bfddb8f3c0
     if imagen.has_key?('standard_resolution')
       return imagen['standard_resolution']['url']
     elsif imagen.has_key?('low_resolution')
@@ -59,8 +63,17 @@ class ApplicationController < ActionController::Base
     return {}
   end
       
+<<<<<<< HEAD
 end
   #protect_from_forgery with: :exception
 
 
 end
+=======
+end
+  #protect_from_forgery with: :exception
+
+
+end
+
+>>>>>>> b3a5a35b4df19015960fba6f567dc3bfddb8f3c0
