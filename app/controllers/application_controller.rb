@@ -47,7 +47,7 @@ class ApplicationController < ActionController::Base
     
   end
 
-  def maximaResolucion(imagen)
+  def maximaResolucion(imagen) #no es necesario creo
   	
     if imagen.has_key?('standard_resolution')
       return imagen['standard_resolution']['url']
