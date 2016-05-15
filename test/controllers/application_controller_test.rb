@@ -12,13 +12,13 @@ class ApplicationControllerTest < ActionController::TestCase
     assert_response :bad_request
   end
 
-  test "retornariamos json desde instagram URL" do
-    controller = ApplicationController.new
-    uri = 'https://api.instagram.com/v1/tags/chile'
-    access_token = "2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"
-    result_data = {"meta"=> {"code"=> 200}, "data"=> {"media_count"=> 0, "name"=> "chile"}}
-    assert_equal(result_data, controller.get('https://api.instagram.com/v1/tags/chile/media/recent?access_token=2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402'))
-  end
+  #test "retornariamos json desde instagram URL" do
+   # controller = ApplicationController.new
+  #  uri = 'https://api.instagram.com/v1/tags/chile'
+  #  access_token = "2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"
+  #  result_data = {"meta"=> {"code"=> 200}, "data"=> {"media_count"=> 0, "name"=> "chile"}}
+  #  assert_equal(result_data, controller.get('https://api.instagram.com/v1/tags/chile/media/recent?access_token=2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402'))
+  #end
 
   
 
