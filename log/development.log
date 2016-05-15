@@ -5687,3 +5687,21 @@ Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 02:57:15 -0400
 Processing by ApplicationController#parametros as */*
   Parameters: {"tag"=>"santiago", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}
 Completed 200 OK in 1613ms (Views: 1.3ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:51:18 -0400
+Processing by ApplicationController#parametros as */*
+  Parameters: {"tag"=>"santiago", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}
+Completed 200 OK in 1320ms (Views: 1.5ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:51:48 -0400
+Processing by ApplicationController#parametros as */*
+  Parameters: {"tag"=>"santiago", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}
+Completed 200 OK in 1242ms (Views: 2.3ms)
+
+
+Started POST "/instagram/tag/buscar" for 127.0.0.1 at 2016-05-15 03:52:05 -0400
+Processing by ApplicationController#parametros as */*
+  Parameters: {"tag"=>"santiago", "access_token"=>"2019746130.59a3f2b.86a0135240404ed5b908a14c0a2d9402"}
+Completed 200 OK in 1314ms (Views: 1.2ms)
