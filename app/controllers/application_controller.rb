@@ -58,4 +58,8 @@ def crearDatos(cantidad, media)
   end
   end    
   #protect_from_forgery with: :exception
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> master
