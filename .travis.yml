@@ -1,8 +1,5 @@
 language: ruby
 cache: bundler
 rvm:
-<<<<<<< HEAD
   - 2.0 
-=======
-  - 2.0
->>>>>>> desarrollo
+
