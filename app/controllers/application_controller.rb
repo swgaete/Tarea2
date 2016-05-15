@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
                 "version" => ""
     }
     respuesta['metadata']={'total' => cantidad['data']['media_count']}
-    respuesta['version'] = '1.3'
+    respuesta['version'] = '1.2'
     media['data'].each do |item| 
     respuesta['posts']<<{
      'tags'=> item['tags'],
@@ -48,7 +48,7 @@ class ApplicationController < ActionController::Base
   end
 
   def maximaResolucion(imagen) #no es necesario 
-  	
+    
     if imagen.has_key?('standard_resolution')
       return imagen['standard_resolution']['url']
     elsif imagen.has_key?('low_resolution')
