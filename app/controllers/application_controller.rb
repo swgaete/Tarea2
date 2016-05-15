@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
                 "version" => ""
     }
     respuesta['metadata']={'total' => cantidad['data']['media_count']}
-    respuesta['version'] = '1.2'
+    respuesta['version'] = '1.3'
     media['data'].each do |item| 
     respuesta['posts']<<{
      'tags'=> item['tags'],
@@ -48,11 +48,7 @@ class ApplicationController < ActionController::Base
   end
 
   def maximaResolucion(imagen) #no es necesario 
-<<<<<<< HEAD
     
-=======
-  	
->>>>>>> b3a5a35b4df19015960fba6f567dc3bfddb8f3c0
     if imagen.has_key?('standard_resolution')
       return imagen['standard_resolution']['url']
     elsif imagen.has_key?('low_resolution')
@@ -63,17 +59,9 @@ class ApplicationController < ActionController::Base
     return {}
   end
       
-<<<<<<< HEAD
-end
-  #protect_from_forgery with: :exception
-
-
-end
-=======
 end
   #protect_from_forgery with: :exception
 
 
 end
 
->>>>>>> b3a5a35b4df19015960fba6f567dc3bfddb8f3c0
