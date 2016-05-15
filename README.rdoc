@@ -1,4 +1,5 @@
 {<img src="https://travis-ci.org/swgaete/Tarea2.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/swgaete/Tarea2]
+{<img src="https://coveralls.io/repos/github/swgaete/Tarea2/badge.svg?branch=desarrollo" alt="Coverage Status" />}[https://coveralls.io/github/swgaete/Tarea2?branch=desarrollo]
 = Entrega Tarea 2 Taller de Integración
 
 
