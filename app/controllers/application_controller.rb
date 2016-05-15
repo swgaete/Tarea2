@@ -5,6 +5,11 @@ class ApplicationController < ActionController::Base
 
   def parametros
 
+    tag = params.has_key?(:tag) ? params[:tag] : nil
+    access_token = params.has_key?(:access_token) ? params[:access_token] : nil
+    if tag.nil? or access_token.nil?
+      render json: {'error' => 'Missing parameter'}, root: false, status: :bad_request
+    else
     tag =params[:tag]
     access_token = params[:access_token]
     uriCantidad= 'https://api.instagram.com/v1/tags/' + tag.to_s + '?access_token=' + access_token.to_s
@@ -13,6 +18,7 @@ class ApplicationController < ActionController::Base
     media = get(uri)
     respuesta = crearDatos(cantidad, media)
     render json: respuesta, root: false
+    end
 
   end
 
