@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
     media = get(uri)
     respuesta = crearDatos(cantidad, media)
     render json: respuesta, root: false
-    
+
     end
 
   end
@@ -43,7 +43,7 @@ class ApplicationController < ActionController::Base
                 "version" => ""
     }
     respuesta['metadata']={'total' => cantidad['data']['media_count']}
-    respuesta['version'] = '1.3'
+    respuesta['version'] = '2.0'
     media['data'].each do |item| 
     respuesta['posts']<<{
      'tags'=> item['tags'],
